@@ -11,6 +11,9 @@ export const Navbar = () => {
                     Searcher 🔍
                 </p>
             </Link>
+            <button type="button" onClick={() => setDarkTheme(!darkTheme)}>
+
+            </button>
         </div>
     </div>
   ) 
