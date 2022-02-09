@@ -11,7 +11,7 @@ export const Navbar = ({darkTheme, setDarkTheme}) => {
                     Searcher 🔍
                 </p>
             </Link>
-            <button type="button" onClick={() => setDarkTheme(!darkTheme)}>
+            <button type="button" onClick={() => setDarkTheme(!darkTheme)} className=" text-xl dark:bg-gray-50 dark:text-gray-900 bg-white border rounded-full px-2 py-1">
                 {darkTheme ? 'Light' : 'Dark'}
             </button>
         </div>
