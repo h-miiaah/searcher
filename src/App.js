@@ -8,7 +8,7 @@ const App = () => {
 
     return(
         <div className={darkTheme ? 'dark' : ''}>
-            <div className="">
+            <div className="bg-gray-100">
                 App
             </div>
         </div>
