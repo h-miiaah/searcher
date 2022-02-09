@@ -12,7 +12,7 @@ export const Navbar = ({darkTheme, setDarkTheme}) => {
                 </p>
             </Link>
             <button type="button" onClick={() => setDarkTheme(!darkTheme)}>
-
+                {darkTheme ? 'Light' : 'Dark'}
             </button>
         </div>
     </div>
