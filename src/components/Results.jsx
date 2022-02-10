@@ -14,7 +14,11 @@ export const Results = () => {
 
   switch (location.pathname) {
     case '/search':
-      return 'SEARCH';
+      return (
+        <div className="flex flex-wrap justify-between space-y-6 sm:px-56">
+
+        </div>
+      );
     case '/images':
       return 'IMAGES';
     case '/news':
