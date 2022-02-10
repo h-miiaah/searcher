@@ -8,7 +8,9 @@ import { useResultContext } from '../contexts/ResultContextProvider';
 export const Results = () => {
   const {results, isLoading, getResults, searchTerm} = useResultContext();
   const location = useLocation();
-  
+
+  if(isLoading) return <Loading />;
+
   return (
     <div>
         Results
