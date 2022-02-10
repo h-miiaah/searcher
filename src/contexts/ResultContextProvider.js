@@ -28,8 +28,8 @@ export const ResultContextProvider = ({childern}) => {
     }
 
     return(
-        <ResultContext.Provider>
-            
+        <ResultContext.Provider value={{getResults, results, searchTerm, setSearchTerm, isLoading}}>
+
         </ResultContext.Provider>
     )
 }
