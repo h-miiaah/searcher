@@ -7,4 +7,8 @@ export const ResultContextProvider = ({childern}) => {
     const [results, setResults] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
+
+    const getResults = async(url) => {
+        
+    }
 }
