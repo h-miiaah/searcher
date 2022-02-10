@@ -9,6 +9,6 @@ export const ResultContextProvider = ({childern}) => {
     const [searchTerm, setSearchTerm] = useState('');
 
     const getResults = async(type) => {
-
+        setIsLoading(true);
     }
 }
