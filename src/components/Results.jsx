@@ -16,7 +16,9 @@ export const Results = () => {
     case '/search':
       return (
         <div className="flex flex-wrap justify-between space-y-6 sm:px-56">
-
+          {results?.results?.map(({link, title}) => (
+            
+          ))}
         </div>
       );
     case '/images':
