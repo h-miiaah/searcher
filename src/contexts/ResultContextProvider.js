@@ -26,4 +26,10 @@ export const ResultContextProvider = ({childern}) => {
         setResults(data);
         setIsLoading(false);
     }
+
+    return(
+        <ResultContext.Provider>
+            
+        </ResultContext.Provider>
+    )
 }
