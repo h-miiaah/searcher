@@ -11,10 +11,14 @@ export const Results = () => {
   const location = useLocation();
 
   if(isLoading) return <Loading />;
+  console.log(location.pathname)
 
-  return (
-    <div>
-        Results
-    </div>
-  )
+  switch (location.pathname) {
+    case '/search':
+      return 'SEARCH';
+      break;
+  
+    default:
+      return 'ERROR';
+  }
 }
