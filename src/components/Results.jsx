@@ -11,13 +11,17 @@ export const Results = () => {
   const location = useLocation();
 
   if(isLoading) return <Loading />;
-  console.log(location.pathname)
 
   switch (location.pathname) {
     case '/search':
       return 'SEARCH';
-      break;
-  
+    case '/images':
+      return 'IMAGES';
+    case '/news':
+      return 'NEWS';
+    case '/videos':
+      return 'VIDEOS';
+    
     default:
       return 'ERROR';
   }
