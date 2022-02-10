@@ -6,7 +6,9 @@ export const Routes = () => {
   return (
     <div className="p-4">
         <Switch>
-          
+          <Route exact path="/">
+
+          </Route>
         </Switch>
     </div>
   ) 
