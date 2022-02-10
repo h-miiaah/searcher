@@ -8,9 +8,10 @@ export const ResultContextProvider = ({childern}) => {
     const [isLoading, setIsLoading] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
 
+    // the type will be /search, /images, /news, /videos
     const getResults = async(type) => {
         setIsLoading(true);
 
-        const response = await fetch(`${baseUrl}`)
+        const response = await fetch(`${baseUrl}${type}`)
     }
 }
