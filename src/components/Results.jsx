@@ -6,6 +6,8 @@ import { useResultContext } from '../contexts/ResultContextProvider';
 
 
 export const Results = () => {
+  const {results, isLoading, getResults, searchTerm} = useResultContext();
+  
   return (
     <div>
         Results
