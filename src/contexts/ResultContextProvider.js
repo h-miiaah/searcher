@@ -19,6 +19,11 @@ export const ResultContextProvider = ({childern}) => {
                 'x-rapidapi-host': 'google-search3.p.rapidapi.com',
                 'x-rapidapi-key': '6f045bd780mshe947ec7027e416dp12a3eejsn32749bbee5db'
             }
-        })
+        });
+
+        const data = await response.json();
+
+        setResults(data);
+        setIsLoading(false);
     }
 }
