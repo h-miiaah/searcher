@@ -12,6 +12,13 @@ export const ResultContextProvider = ({childern}) => {
     const getResults = async(type) => {
         setIsLoading(true);
 
-        const response = await fetch(`${baseUrl}${type}`)
+        const response = await fetch(`${baseUrl}${type}`, {
+            method: 'GET',
+            headers: {
+                'x-user-agent': 'desktop',
+                'x-rapidapi-host': 'google-search3.p.rapidapi.com',
+                'x-rapidapi-key': '6f045bd780mshe947ec7027e416dp12a3eejsn32749bbee5db'
+            }
+        })
     }
 }
