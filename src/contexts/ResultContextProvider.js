@@ -33,3 +33,5 @@ export const ResultContextProvider = ({childern}) => {
         </ResultContext.Provider>
     )
 }
+
+export const useResultContext = () => useContext(ResultContext);
