@@ -11,8 +11,14 @@ export const Results = () => {
   const location = useLocation();
 
   useEffect(() => {
-    getResults('/search/q=funny&num=20')
-  }, []);
+    if(searchTerm){
+      if(location.pathname === '/videos'){
+        getResults(`/search/q=${searchTerm} videos`);
+      } else{
+        getResults(`/${location.pathnaname}/q=${searchTerm}&num=20`)
+      }
+    }
+  }, [searchTerm, location.pathname, getResults]);
 
   if(isLoading) return <Loading />;
 
