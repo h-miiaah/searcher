@@ -35,7 +35,11 @@ export const Results = () => {
         </div>
       );
     case '/images':
-      return 'IMAGES';
+      return (
+        <div className="flex flex-wrap justify-center items-center">
+          
+        </div>
+      );
     case '/news':
       return 'NEWS';
     case '/videos':
