@@ -15,10 +15,10 @@ export const Results = () => {
       if(location.pathname === '/videos'){
         getResults(`/search/q=${searchTerm} videos`);
       } else{
-        getResults(`/${location.pathnaname}/q=${searchTerm}&num=20`)
+        getResults(`${location.pathnaname}/q=${searchTerm}&num=20`)
       }
     }
-  }, [searchTerm, location.pathname, getResults]);
+  }, [searchTerm, location.pathname]);
 
   if(isLoading) return <Loading />;
 
