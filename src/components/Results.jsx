@@ -11,7 +11,7 @@ export const Results = () => {
   const location = useLocation();
 
   useEffect(() => {
-    getResults('/search/q=funny&num=40')
+    getResults('/search/q=funny&num=2')
   }, []);
 
   if(isLoading) return <Loading />;
