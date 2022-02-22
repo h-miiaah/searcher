@@ -32,7 +32,7 @@ export const ResultContextProvider = ({children}) => {
             setResults(data.results);
         }
 
-        // setResults(data);
+        setResults(data);
         setIsLoading(false);
     }
 
