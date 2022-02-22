@@ -23,7 +23,9 @@ export const ResultContextProvider = ({children}) => {
 
         const data = await response.json();
 
-        console.log(data);
+        if (type === '/news'){
+            console.log({data})
+        }
 
         setResults(data);
         setIsLoading(false);
