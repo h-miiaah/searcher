@@ -63,7 +63,9 @@ export const Results = () => {
                   {title}
                 </p>
                 <div className="flex gap-4">
+                  <a href={source?.href} target="_blank" rel="noreferrer">
 
+                  </a>
                 </div>
               </a>
             </div>
