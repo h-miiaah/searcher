@@ -59,9 +59,6 @@ export const Results = () => {
           {results?.entries?.map(({links, id, source, title}) => (
             <div key={id} className="md:w-2/5 w-full">
               <a href={links?.[0].href} target="_blank" rel="noreferrer" className="hover:underline">
-                <p className="text-sm">
-                  {link.lenght > 30 ? link.substring(0, 30) : link}
-                </p>
                 <p className="text-lg hover:underline dark:text-blue-300 text-blue-700">
                   {title}
                 </p>
