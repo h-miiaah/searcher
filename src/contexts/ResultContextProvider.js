@@ -23,8 +23,13 @@ export const ResultContextProvider = ({children}) => {
 
         const data = await response.json();
 
-        if (type === '/news'){
-            console.log({data})
+        console.log({type, data})
+        if (type.includes('/news')){
+            return data.entries;
+        } else if(type.includes('/images')){
+            return data.image_results;
+        } else {
+            return data.result;
         }
 
         setResults(data);
