@@ -56,7 +56,7 @@ export const Results = () => {
     case '/news':
       return (
         <div className="flex flex-wrap justify-between space-y-6 sm:px-56 items-center">
-          {results?.news?.map(({links, id, source, title}) => (
+          {results?.results?.map(({links, id, source, title}) => (
             <div key={id} className="md:w-2/5 w-full">
               <a href={links?.[0].href} target="_blank" rel="noreferrer" className="hover:underline">
                 <p className="text-lg dark:text-blue-300 text-blue-700">

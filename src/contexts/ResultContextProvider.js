@@ -23,7 +23,7 @@ export const ResultContextProvider = ({children}) => {
 
         const data = await response.json();
 
-        console.log({type, data})
+        // console.log({type, data})
         if (type.includes('/news')){
             setResults(data.entries);
         } else if(type.includes('/images')){
@@ -32,7 +32,7 @@ export const ResultContextProvider = ({children}) => {
             setResults(data.results);
         }
 
-        setResults(data);
+        // setResults(data);
         setIsLoading(false);
     }
 
