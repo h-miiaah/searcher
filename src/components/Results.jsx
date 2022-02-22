@@ -62,6 +62,9 @@ export const Results = () => {
                 <p className="text-lg dark:text-blue-300 text-blue-700">
                   {title}
                 </p>
+                <div className="flex gap-4">
+
+                </div>
               </a>
             </div>
           ))}
