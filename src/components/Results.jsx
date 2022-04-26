@@ -88,4 +88,5 @@ export const Results = () => {
   }
 }
 
+// Images section works sometimes
 // News section works sometimes
