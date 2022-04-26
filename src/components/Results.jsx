@@ -87,3 +87,5 @@ export const Results = () => {
       return 'ERROR';
   }
 }
+
+// Searches may vary
