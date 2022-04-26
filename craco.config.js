@@ -1,4 +1,6 @@
 // craco.config.js
+require('dotenv').config()
+
 module.exports = {
     style: {
         postcssOptions: {
@@ -8,4 +10,5 @@ module.exports = {
             ],
         },
     },
+    REACT_APP_API_KEY: process.env.REACT_APP_API_KEY,
 }
